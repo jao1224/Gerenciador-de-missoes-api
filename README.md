@@ -1,28 +1,4 @@
-API de Gerenciamento de Missões
-
-Visão Geral
-
-A API de Gerenciamento de Missões foi desenvolvida para facilitar a administração de missões, oferecendo funcionalidades completas para criar, atualizar, excluir e buscar informações. Esta documentação apresenta os endpoints disponíveis e seus respectivos propósitos.
-
-Endpoints
-
-1. Criar Missão
-
-Rota: /create
-
-Método HTTP: POST
-
-Descrição: Permite criar uma nova missão no sistema.
-
-Exemplo de Requisição:
-
-{
-    "titulo": "Missão Espacial",
-    "descricao": "Explorar a superfície de Marte",
-    "dataInicio": "2025-01-15",
-    "dataFim": "2025-02-15",
-    "status": "pendente"
-}
+# API de Gerenciamento de Missões ## Visão Geral A API de Gerenciamento de Missões foi desenvolvida para facilitar a administração de missões, oferecendo funcionalidades completas para criar, atualizar, excluir e buscar informações. Esta documentação apresenta os endpoints disponíveis e seus respectivos propósitos. ## Endpoints ### 1. Criar Missão - **Rota:** `/create` - **Método HTTP:** `POST` - **Descrição:** Permite criar uma nova missão no sistema. **Exemplo de Requisição:**
 
 2. Atualizar Missão
 
@@ -33,7 +9,7 @@ Método HTTP: PUT
 Descrição: Atualiza as informações de uma missão existente no sistema.
 
 Exemplo de Requisição:
-
+```json
 {
     "id": 123,
     "titulo": "Missão Espacial Atualizada",
