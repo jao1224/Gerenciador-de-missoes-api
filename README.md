@@ -17,9 +17,8 @@ A API de Gerenciamento de Missões foi desenvolvida para facilitar a administra�
     "descricao": "Exploração de um novo planeta",
     "dataInicio": "2025-01-01",
     "status": "planejada"
-        ```json
-
 }
+
 ### 2. Atualizar Missão
 - **Rota:** `/update`
 - Método HTTP: `PUT`
