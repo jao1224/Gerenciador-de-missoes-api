@@ -20,10 +20,10 @@ A API de Gerenciamento de Missões foi desenvolvida para facilitar a administra�
     ```json
 }
 ### 2. Atualizar Missão
-Rota: /update
-Método HTTP: PUT
+- **Rota:** `/update`
+- Método HTTP: `PUT`
 - **Descrição:** Atualiza as informações de uma missão existente no sistema.
-Exemplo de Requisição
+####Exemplo de Requisição
 
 {```json
     "id": 123,
@@ -32,11 +32,11 @@ Exemplo de Requisição
     "status": "em andamento"
     ```json
 }
-3. Deletar Missão
+## 3. Deletar Missão
 - **Rota:** `/delete`
 - **Método HTTP:** `DELETE`
 - **Descrição:** Remove uma missão do sistema.
-Exemplo de Requisição
+####Exemplo de Requisição
 
 {```json
     "id": 123
@@ -44,13 +44,13 @@ Exemplo de Requisição
 }
 
 ## 4. Pesquisar Missões
-###4.1 Pesquisa por ID
-Rota: /id
-Método HTTP: GET
-Descrição: Busca uma missão específica através do seu identificador único.
+### 4.1 Pesquisa por ID
+- Rota: /id
+- Método HTTP: GET
+- Descrição: Busca uma missão específica através do seu identificador único.
 Parâmetros de URL
-id (obrigatório): O identificador único da missão.
-Exemplo de Requisição
+`id` (obrigatório): O identificador único da missão.
+####Exemplo de Requisição
 GET /id?id=123
 ###4.2 Pesquisa por Intervalo de Data
 Rota: /date
@@ -61,9 +61,15 @@ dataInicio (obrigatório): Data inicial do intervalo.
 dataFim (opcional): Data final do intervalo.
 Exemplo de Requisição
 
-GET /date?dataInicio=2025-01-01&dataFim=2025-12-31
-5. Mostrar Todo o Banco de Missões
-Rota: /all
+{     ```json
+
+    "date?dataInicio=2025-01-01&dataFim=2025-12-31"
+        
+
+}  
+
+## 5. Mostrar Todo o Banco de Missões
+-Rota: /all
 Método HTTP: GET
 Descrição: Retorna todas as missões cadastradas no banco de dados.
 Exemplo de Requisição
