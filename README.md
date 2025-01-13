@@ -12,12 +12,13 @@ A API de Gerenciamento de Missões foi desenvolvida para facilitar a administra�
 
 #### Exemplo de Requisição
 
-{ ```json
+{  ```json
     "titulo": "Missão Espacial",
     "descricao": "Exploração de um novo planeta",
     "dataInicio": "2025-01-01",
     "status": "planejada"
-    ```json
+        ```json
+
 }
 ### 2. Atualizar Missão
 - **Rota:** `/update`
@@ -26,24 +27,25 @@ A API de Gerenciamento de Missões foi desenvolvida para facilitar a administra�
 
 #### Exemplo de Requisição
 
-{ ```json
+{  ```json
     "id": 123,
     "titulo": "Missão Espacial Atualizada",
     "descricao": "Exploração detalhada da superfície de Marte",
     "status": "em andamento"
     
-    ```json
+  
 }
 ## 3. Deletar Missão
 - **Rota:** `/delete`
 - **Método HTTP:** `DELETE`
 - **Descrição:** Remove uma missão do sistema.
-####Exemplo de Requisição
+#### Exemplo de Requisição
 
-{ ```json
+{      ```json
+
     "id": 123
     
-    ```json
+   
 }
 
 ## 4. Pesquisar Missões
@@ -74,7 +76,7 @@ Exemplo de Requisição
 
     "date?dataInicio=2025-01-01&dataFim=2025-12-31"
         
-    ```json
+    
 
 }     
 
