@@ -46,13 +46,18 @@ A API de Gerenciamento de Missões foi desenvolvida para facilitar a administra�
 
 ## 4. Pesquisar Missões
 ### 4.1 Pesquisa por ID
-- Rota: /id
-- Método HTTP: GET
-- Descrição: Busca uma missão específica através do seu identificador único.
+- Rota: `/id`
+- Método HTTP: `GET`
+- ** Descrição:** Busca uma missão específica através do seu identificador único.
 Parâmetros de URL
 `id` (obrigatório): O identificador único da missão.
-####Exemplo de Requisição
-GET /id?id=123
+#### Exemplo de Requisição
+{     ```json
+
+    id?id=123
+    
+}     
+
 ###4.2 Pesquisa por Intervalo de Data
 Rota: /date
 Método HTTP: GET
@@ -67,26 +72,25 @@ Exemplo de Requisição
     "date?dataInicio=2025-01-01&dataFim=2025-12-31"
         
 
-}  
+}      ```json
 
 ## 5. Mostrar Todo o Banco de Missões
--Rota: /all
-Método HTTP: GET
-Descrição: Retorna todas as missões cadastradas no banco de dados.
-Exemplo de Requisição
-sql
-Copiar código
-GET /all
-Observações Gerais
+- **Rota:** `/all`
+- **Método HTTP:** `GET`
+- ** Descrição:** Retorna todas as missões cadastradas no banco de dados.
+####Exemplo de Requisição
+
+`GET /all`
+## Observações Gerais
 Autenticação
 Para garantir a segurança, todos os endpoints exigem autenticação via token JWT.
 
-Formato de Respostas
+### Formato de Respostas
 Todas as respostas são fornecidas em JSON.
 
-Códigos de Status
-200: Sucesso.
-400: Requisição inválida.
-401: Não autorizado.
-404: Recurso não encontrado.
-500: Erro interno do servidor.
+#### Códigos de Status
+- 200: Sucesso.
+- 400: Requisição inválida.
+- 401: Não autorizado.
+- 404: Recurso não encontrado.
+- 500: Erro interno do servidor.
